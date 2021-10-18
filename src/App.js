@@ -3,6 +3,7 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Login from "./components/Login/Login";
 import NotFound from "./components/NotFound/NotFound";
+import ServiceDetails from "./components/Services/ServiceDetails";
 import About from "./pages/About";
 import Home from "./pages/Home";
 // import Service from "./pages/Service";
@@ -22,6 +23,9 @@ function App() {
           {/* <Route path="/service">
             <Service />
           </Route> */}
+          <Route path="/service/:serviceId/:title/:details/:img">
+            <ServiceDetails/>
+          </Route>
           <Route path="/about">
             <About />
           </Route>
