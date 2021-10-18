@@ -8,3 +8,18 @@
 .servicesCard .image img{
     width: 100%;
 }
+.serviceDetails .image{
+    width: 1100px;
+    margin: 0 auto;
+    height: 500px;
+    overflow: hidden;
+
+}
+.serviceDetails .image img{
+    width: 100%;
+}
+.myContent{
+    width: 1000px;
+    margin:auto;
+    text-align: center;
+}
