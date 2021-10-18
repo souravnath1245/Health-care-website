@@ -1,0 +1,10 @@
+.servicesCard{
+    background-color: rgba(231, 231, 231, 0.534);
+}
+.servicesCard .image{
+    width: 300px;
+    height: 220px;
+}
+.servicesCard .image img{
+    width: 100%;
+}

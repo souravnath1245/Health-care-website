@@ -1,29 +1,38 @@
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import initialAuthorentication from "./firebase/firebase.init";
-import {getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
-import { useState } from "react";
-
-
-initialAuthorentication();
+import Header from "./components/Header/Header";
+import Login from "./components/Login/Login";
+import NotFound from "./components/NotFound/NotFound";
+import About from "./pages/About";
+import Home from "./pages/Home";
+// import Service from "./pages/Service";
 
 function App() {
-  const [user, setUser] = useState([])
-  
-  const googleProvider = new GoogleAuthProvider();
-  const auth = getAuth();
-  const handleGoogleLogIn=()=>{
-    signInWithPopup(auth, googleProvider).then((result)=>{
-        const user = result.user;
-        console.log(user);
-        setUser(user);
-    });
-  }
-
   return (
     <div>
-
-      <button onClick={handleGoogleLogIn} className="btn btn-primary">google login</button>
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          {/* <Route path="/service">
+            <Service />
+          </Route> */}
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="*">
+              <NotFound />
+            </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }

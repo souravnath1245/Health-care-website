@@ -1,0 +1,50 @@
+[
+    {
+       "id":1,
+       "title":"Hair Transplantation",
+       "details":"Magna sea elitr aliquyam accusam sit sed, vero takimata diam justo duo aliquyam amet aliquyam r,ebum. Dolor lorem dolore justo.",
+       "img":"https://images.squarespace-cdn.com/content/v1/5866c1756b8f5b1810734098/1486445097973-BG1D1WJ2B64I3IRQW418/Hair+Transplant+Facial+Plastic+Surgery+Beverly+Hills+1?format=1000w"
+    },
+    {
+       "id":2,
+       "title":"Laser Hair Treatment",
+       "details":"Magna sea elitr aliquyam accusam sit sed, vero takimata diam justo duo aliquyam amet aliquyam r,ebum. Dolor lorem dolore justo.",
+       "img":"https://images.squarespace-cdn.com/content/v1/5866c1756b8f5b1810734098/1486445097973-BG1D1WJ2B64I3IRQW418/Hair+Transplant+Facial+Plastic+Surgery+Beverly+Hills+1?format=1000w"
+    },
+    {
+       "id":3,
+       "title":"Tooth Restoration",
+       "details":"Magna sea elitr aliquyam accusam sit sed, vero takimata diam justo duo aliquyam amet aliquyam r,ebum. Dolor lorem dolore justo.",
+       "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLMAkCi_JxZiQHfAjK4ozt3Z5NHSFfr6LE8Q&usqp=CAU"
+    },
+    {
+       "id":4,
+       "title":"Dental Care",
+       "details":"Magna sea elitr aliquyam accusam sit sed, vero takimata diam justo duo aliquyam amet aliquyam r,ebum. Dolor lorem dolore justo.",
+       "img":"https://louisvilledentistry.net/wp-content/uploads/dental-bonding-820.jpg"
+    },
+    {
+       "id":5,
+       "title":"Cardiology",
+       "details":"Magna sea elitr aliquyam accusam sit sed, vero takimata diam justo duo aliquyam amet aliquyam r,ebum. Dolor lorem dolore justo.",
+       "img":"https://www.fortisescorts.in/userfiles/image/cardiology.jpg"
+    },
+    {
+       "id":6,
+       "title":"Medicine",
+       "details":"Magna sea elitr aliquyam accusam sit sed, vero takimata diam justo duo aliquyam amet aliquyam r,ebum. Dolor lorem dolore justo.",
+       "img":"https://image.freepik.com/free-photo/male-medicine-doctor-hand-holding-offering-patient-jar-pills_151013-13155.jpg"
+    },
+    {
+       "id":7,
+       "title":"Neurology",
+       "details":"Magna sea elitr aliquyam accusam sit sed, vero takimata diam justo duo aliquyam amet aliquyam r,ebum. Dolor lorem dolore justo.",
+       "img":"https://www.cure2heal.com/asset/images/blog/672573830top-10-neurologists-of-india.jpg"
+    },
+    {
+       "id":8,
+       "title":"Nephrologist ",
+       "details":"Magna sea elitr aliquyam accusam sit sed, vero takimata diam justo duo aliquyam amet aliquyam r,ebum. Dolor lorem dolore justo.",
+       "img":"https://www.verywellhealth.com/thmb/Vxl2r9rgNhnoKz33-v9KUsQJsgk=/3865x2576/filters:fill(87E3EF,1)/nurse-and-human-kidney-168509947-5833a8d15f9b58d5b1d95a6a.jpg"
+    }
+ ]
