@@ -11,3 +11,11 @@
     color: #ff2b2b;
     font-family :"Monaco";
 }
+@media only screen and (max-width: 600px){
+    .bannerHeader{
+        font-size:25px;
+    }
+    .bannerPara{
+        font-size: 18px;
+    }
+}

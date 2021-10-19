@@ -1,15 +1,46 @@
-import React from "react";
+import React,{useState} from "react";
 import useAuth from "../../hooks/useAuth";
-import {useLocation, useHistory} from 'react-router-dom'
+import {useLocation, useHistory,Link} from 'react-router-dom'
 import './Login.css'
 import { Form,Button } from "react-bootstrap";
 import login1 from '../../images/loginImage/login1.jpg';
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+
 
 const Login = () => {
   const {setIsLoading, signInUsingGoogle } = useAuth();
   const history = useHistory()
   const location = useLocation();
   const redirect_uri = location.state?.from || '/home';
+
+
+ const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [error, setError] = useState("")
+  const auth = getAuth();
+
+   
+    const handleEmail=(e)=>{
+      console.log(e.target.value);
+      setEmail(e.target.value);
+    }
+
+    const handlePassword=(e)=>{
+      console.log(e.target.value);
+      setPassword(e.target.value);
+    }
+    const handleLogin=(e)=>{
+        e.preventDefault();
+        signInWithEmailAndPassword(auth,  email, password)
+        .then((result)=> {
+          const user = result.user;
+          console.log(user);
+        }).catch((error)=>{
+          setError(error.message);
+        })
+    }
+
+
 
   const handleGoogleLogin =()=>{
     signInUsingGoogle()
@@ -20,15 +51,17 @@ const Login = () => {
 
   return (
     <div className="loginSection container mx-auto row justify-content-center align-items-center ">
+      
       <div className=" col-lg-6 col-sm-10 mx-auto  image">
         <img src={login1} alt="" />
       </div>
       <div className="col-lg-6 col-sm-10 login mx-auto">
         <h2 className='fw-bolder'>Sign Up</h2>
-       <Form>
+        <span className='text-warning'>{error}</span>
+       <Form onSubmit={handleLogin}>
   <Form.Group className="mb-3" controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
-    <Form.Control type="email" placeholder="Enter email" />
+    <Form.Control onBlur={handleEmail} type="email" placeholder="Enter email" />
     <Form.Text className="text-muted">
       We'll never share your email with anyone else.
     </Form.Text>
@@ -36,15 +69,19 @@ const Login = () => {
 
   <Form.Group className="mb-3" controlId="formBasicPassword">
     <Form.Label>Password</Form.Label>
-    <Form.Control type="password" placeholder="Password" />
+    <Form.Control onBlur={handlePassword} type="password" placeholder="Password" />
   </Form.Group>
-  <Form.Group className="mb-3" controlId="formBasicCheckbox">
-    <Form.Check type="checkbox" label="Already Register" />
-  </Form.Group>
+  
   <Button variant="primary" type="submit">
     Submit
   </Button>
 </Form>
+
+    <span >Please Create Account First </span> 
+    <Link to='/register'>
+    <a href=''>Create an Account </a>
+    </Link>
+
     <div className='anotherLogin'>
     <span>Or login with </span>
         <button onClick={handleGoogleLogin} className="btn btn-warning">
