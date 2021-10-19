@@ -1,0 +1,13 @@
+.bannerHeader{
+    font-size: 60px;
+    color: #ff2b2b;
+    font-weight: 900;
+    font-family: 'Roboto', sans-serif;
+
+}
+.bannerPara{
+    font-size: 25px;
+    font-weight: 700;
+    color: #ff2b2b;
+    font-family :"Monaco";
+}

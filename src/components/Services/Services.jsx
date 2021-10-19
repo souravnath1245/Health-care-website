@@ -11,7 +11,7 @@ const Services = (props) => {
       </div>
       <h3 className="text-center text-danger">{title}</h3>
       <p className='text-center p-1'>{details}</p>
-      <Link to={`/service/${id}/${title}/${details}/${img}`}>
+      <Link to={`/service/${title}/${details}`}>
       <button className="btn btn-warning justify-content-center fw-bold">More About {title}</button>
         </Link>
     </div>

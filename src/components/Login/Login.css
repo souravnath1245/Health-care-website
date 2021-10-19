@@ -16,6 +16,9 @@
 .login{
     padding: 80px;
 }
+.loginSection .image img{
+    width: 100%;
+}
 .anotherLogin{
     margin-top: 30px;
 }
@@ -28,6 +31,9 @@
     }
     .register{
         width: 350px;
+    }
+    .login{
+        padding: 20px;
     }
     
     

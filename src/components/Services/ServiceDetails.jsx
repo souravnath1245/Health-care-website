@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import banner4 from '../../images/banner/banner-5.jpg';
 
 const ServiceDetails = () => {
-  const { serviceId,title,details,img } = useParams();
+  const { title,details } = useParams();
   return (
     <div className='serviceDetails p-4 my-4'>
       <div className=" myContent my-4">

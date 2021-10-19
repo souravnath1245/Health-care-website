@@ -3,12 +3,12 @@ import useAuth from "../../hooks/useAuth";
 import {useLocation, useHistory} from 'react-router-dom'
 import './Login.css'
 import { Form,Button } from "react-bootstrap";
+import login1 from '../../images/loginImage/login1.jpg';
 
 const Login = () => {
   const {setIsLoading, signInUsingGoogle } = useAuth();
   const history = useHistory()
   const location = useLocation();
-  console.log("came from",location.state?.from);
   const redirect_uri = location.state?.from || '/home';
 
   const handleGoogleLogin =()=>{
@@ -21,7 +21,7 @@ const Login = () => {
   return (
     <div className="loginSection container mx-auto row justify-content-center align-items-center ">
       <div className=" col-lg-6 col-sm-10 mx-auto  image">
-        <img src="" alt="" />
+        <img src={login1} alt="" />
       </div>
       <div className="col-lg-6 col-sm-10 login mx-auto">
         <h2 className='fw-bolder'>Sign Up</h2>
