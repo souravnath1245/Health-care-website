@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header/Header";
 import Login from "./components/Login/Login";
+import Register from "./components/Login/Register";
 import NotFound from "./components/NotFound/NotFound";
 import ServiceDetails from "./components/Services/ServiceDetails";
 import AuthProvider from "./context/AuthProvider";
@@ -35,6 +36,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route path="/register">
+              <Register />
             </Route>
             <Route path="*">
               <NotFound />

@@ -1,5 +1,34 @@
-.login-form{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.register-form{
+    padding: 80px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.register{
+    width: 400px;
+    margin: 0 auto;
+}
+.loginSection{
+    
+    margin-bottom: 100px;
+    background-color:  #f2f2f2;
+    padding: 40px
+}
+.login{
+    padding: 80px;
+}
+.anotherLogin{
+    margin-top: 30px;
+}
+
+@media only screen and (max-width: 600px){
+    .register-form{
+        width: 450px;
+        margin: 0 auto;
+        
+    }
+    .register{
+        width: 350px;
+    }
+    
+    
 }

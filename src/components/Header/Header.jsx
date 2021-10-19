@@ -30,6 +30,9 @@ const Header = () => {
             <Nav.Link as={HashLink} to="/about">
               About
             </Nav.Link>
+            <Nav.Link as={Link} to="/register">
+              Register
+            </Nav.Link>
             {
               user?.email ? <Button onClick={logOut} className="btn-sm m-2" variant="primary">Logout</Button>:
 
