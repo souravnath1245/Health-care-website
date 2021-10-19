@@ -9,12 +9,12 @@ This is a *MedWish-Health* Hospital Website. More and more people choose a hospi
 
 ## Some Benifits of this website
 
-** 1. We have fantastic Doctors. **
-** 2. We always provide best services. **
-** 3. High Quality medicines at Lowest Rates. **
-** 4. Every Week Our Doctors see patients for free. **
-** 5. You can see all types of doctors through the hospital **
-** 6. You can see a doctor in collaboration on the internet, if You want. **
+### We have fantastic Doctors. 
+### We always provide best services.
+### High Quality medicines at Lowest Rates.
+### Every Week Our Doctors see patients for free.
+### You can see all types of doctors through the hospital.
+### You can see a doctor in collaboration on the internet, if You want.
 
 
 
