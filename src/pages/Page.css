@@ -4,4 +4,57 @@
     grid-gap: 20px;
     
 }
+.doctorSection{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.sectionDoctor{
+    margin: 80px 0px;
+   
+}
+.headerContent{
+    padding: 50px;
+    background-color: beige;
+}
+.doctorsPortfolio .image{
+    width: 300px;
 
+}
+.doctors{
+    background-color: #f6f6f6;
+}
+.doctors:hover .image img{
+    transition:all 1s;
+    transform: scale(1.1);
+}
+.doctorsPortfolio .image img{
+    width: 100%;
+}
+.aboutSection{
+    margin: 80px 0px;
+
+}
+.headerSection{
+    background-color: beige;
+    padding: 50px;
+    text-transform: uppercase;
+}
+.aboutDiv .image{
+    width:500px;
+}
+.aboutDiv .image img{
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px){
+    .serviceSection{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .doctorSection{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .aboutContent h2,p{
+        text-align: center;
+    }
+}
