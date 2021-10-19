@@ -7,11 +7,11 @@ const Doctor = () => {
   const { doctors } = useSevices();
 
   return (
-    <div className="sectionDoctor container ">
+    <div className="sectionDoctor container">
       <div className="headerContent my-4">
         <h1 className="text-center text-danger fw-bolder">Meet Our Qualified Doctors</h1>
       </div>
-      <div className="doctorSection container-fluid ">
+      <div className="doctorSection ">
         {doctors.map((doctor) => (
           <Doctors key={doctor.id} doctor={doctor} />
         ))}

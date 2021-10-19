@@ -1,3 +1,23 @@
+
+# MedWish Hospital Website
+
+This Website Link (https://medwish-healthcare-project.web.app).
+
+## Description
+
+This is a *MedWish-Health* Hospital Website. More and more people choose a hospital with the help of famous Google or other search engines (in other words, resorting to the Internet). Moreover, before making an appointment with a doctor, your potential patient will definitely visit the site he likes and studies all the information it provides. So a hospital web resource is currently one of the most significant channels of sales of medical services and related products. 
+
+## Some Benifits of this website
+
+** 1. We have fantastic Doctors. **
+** 2. We always provide best services. **
+** 3. High Quality medicines at Lowest Rates. **
+** 4. Every Week Our Doctors see patients for free. **
+** 5. You can see all types of doctors through the hospital **
+** 6. You can see a doctor in collaboration on the internet, if You want. **
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
