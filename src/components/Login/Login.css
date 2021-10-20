@@ -27,10 +27,11 @@
     .register-form{
         width: 450px;
         margin: 0 auto;
+        padding: 20px;
         
     }
     .register{
-        width: 350px;
+        width: 300px;
     }
     .login{
         padding: 20px;

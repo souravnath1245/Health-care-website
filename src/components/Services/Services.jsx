@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./services.css";
 
 const Services = (props) => {
-  const { id,title,details, img } = props.service;
+  const { title,details, img } = props.service;
   return (
     <div className="servicesCard mx-auto p-3 text-center">
       <div className="image mx-auto">

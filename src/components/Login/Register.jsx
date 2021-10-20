@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link ,useHistory} from 'react-router-dom';
 import useAuth from "../../hooks/useAuth";
 import {useState} from 'react'
 import './Login.css';
@@ -12,6 +12,8 @@ const Register = () => {
   const [password, setPassword] = useState("")
   const [error, setError] = useState("")
   const auth = getAuth();
+
+  const history = useHistory()
     const {user, signInUsingGoogle } = useAuth();
 
    
@@ -31,7 +33,11 @@ const Register = () => {
         .then((result)=> {
           const user = result.user;
           console.log(user);
-        }).catch((error)=>{
+        })
+        .then(result=> {
+          history.push('/home')
+        })
+        .catch((error)=>{
           setError(error.message);
         })
     }
