@@ -63,5 +63,7 @@
   .register{
       width: 300px;
   }
-  
+  .content h1{
+    text-align: center;
+  }
 }

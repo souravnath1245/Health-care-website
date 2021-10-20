@@ -44,13 +44,13 @@ const Register = () => {
 
     return (
         <div className="register-form">
-            
+         
             <div className='register'>
                 <h2>Register: Create Account</h2>
                <Form onSubmit={handleRegistation}>
                <Form.Group className="mb-3" controlId="formBasicName">
     <Form.Label>Your Name</Form.Label>
-    <Form.Control  type="text" placeholder="Your Name" />
+    <Form.Control value={user?.displayName}  type="text" placeholder="Your Name" />
   </Form.Group>
   
 
