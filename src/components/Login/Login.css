@@ -1,41 +1,37 @@
-.register-form{
-    padding: 80px;
-    width: 1200px;
-    margin: 0 auto;
+.register-form {
+  padding-top: 40px;
+  width: 1200px;
+  margin: 0 auto;
 }
-.register{
-    width: 400px;
-    margin: 0 auto;
+.register {
+  width: 400px;
+  margin: 0 auto;
 }
-.loginSection{
-    
-    margin-bottom: 100px;
-    background-color:  #f2f2f2;
-    padding: 40px
+.loginSection {
+  margin-bottom: 100px;
+  background-color: #f2f2f2;
+  padding: 40px;
 }
-.login{
-    padding: 80px;
+.login {
+  padding: 80px;
 }
-.loginSection .image img{
-    width: 100%;
+.loginSection .image img {
+  width: 100%;
 }
-.anotherLogin{
-    margin-top: 30px;
+.anotherLogin {
+  margin-top: 30px;
 }
 
-@media only screen and (max-width: 600px){
-    .register-form{
-        width: 450px;
-        margin: 0 auto;
-        padding: 20px;
-        
-    }
-    .register{
-        width: 300px;
-    }
-    .login{
-        padding: 20px;
-    }
-    
-    
+@media only screen and (max-width: 600px) {
+  .register-form {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 40px;
+  }
+  .register {
+    width: 300px;
+  }
+  .login {
+    padding: 20px;
+  }
 }
